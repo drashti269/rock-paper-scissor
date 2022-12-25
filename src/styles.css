@@ -1,0 +1,109 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#result {
+  color: crimson;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.header {
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.header .score {
+  font-size: 20px;
+  margin-left: 10px;
+  font-weight: bold;
+  color: darkgreen;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  /* margin: 20% 0; */
+  flex-direction: column;
+}
+
+.start {
+  display: flex;
+  width: fit-content;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: aliceblue;
+  cursor: pointer;
+}
+
+.start:hover {
+  background-color: blanchedalmond;
+}
+
+.start p {
+  margin-left: 10px;
+}
+
+.game_container {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  flex-wrap: wrap;
+  display: none;
+}
+
+.line {
+  display: flex;
+  border: 1px dashed #ccc;
+  width: 100%;
+}
+
+.user,
+.computer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.rock,
+.paper,
+.scissor {
+  display: flex;
+  width: 100px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  background-color: darkgoldenrod;
+  border-radius: 50%;
+  padding: 20px 0;
+  margin: 25px;
+  cursor: pointer;
+}
+
+.computer .rock,
+.computer .paper,
+.computer .scissor {
+  background-color: cadetblue;
+  cursor: no-drop;
+}
+
+.user-move.rock:hover,
+.user-move.paper:hover,
+.user-move.scissor:hover {
+  background-color: rgb(228, 180, 60);
+}
+.user-active {
+  background-color: darkorange !important;
+}
+
+.computer-active {
+  background-color: darkslateblue !important;
+}

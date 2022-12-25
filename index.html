@@ -1,0 +1,90 @@
+<!-- Rock Paper Scissor Game
+Display one button on screen to Start game
+Once game is started, display 3 buttons on screen, button should be Rock, Paper, Scissor
+User can click on any button to choose the option, Computer should randomly pick one option
+Calculate the score according to rock, paper, scissor conditions
+If User wins, add 1 score to user, if Computer wins add 1 score to computer
+Continue game till 5 rounds, at the end display who is winner according to maximum score -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <script src="src/index.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <p id="result"></p>
+      <div class="start" id="start_button">
+        <img src="./assets/rock-paper-scissors.png" alt="game" width="50px" />
+        <p>Start Game</p>
+      </div>
+      <div class="game_container" id="game_container">
+        <p id="round"></p>
+        <div class="header">
+          <h3>COMPUTER:</h3>
+          <p class="score" data-score="computer"></p>
+        </div>
+        <div class="computer">
+          <div class="computer-move rock" data-move="rock">
+            <img
+              src="./assets/rock.png"
+              alt="rock"
+              width="50px"
+              height="50px"
+            />
+          </div>
+          <div class="computer-move paper" data-move="paper">
+            <img
+              src="./assets/paper.png"
+              alt="paper"
+              width="50px"
+              height="50px"
+            />
+          </div>
+          <div class="computer-move scissor" data-move="scissor">
+            <img
+              src="./assets/scissor.png"
+              alt="scissor"
+              width="50px"
+              height="50px"
+            />
+          </div>
+        </div>
+        <div class="line"></div>
+        <div class="header">
+          <h3>YOU:</h3>
+          <p class="score" data-score="you"></p>
+        </div>
+        <div class="user">
+          <div class="user-move rock" data-move="rock">
+            <img
+              src="./assets/rock.png"
+              alt="rock"
+              width="50px"
+              height="50px"
+            />
+          </div>
+          <div class="user-move paper" data-move="paper">
+            <img
+              src="./assets/paper.png"
+              alt="paper"
+              width="50px"
+              height="50px"
+            />
+          </div>
+          <div class="user-move scissor" data-move="scissor">
+            <img
+              src="./assets/scissor.png"
+              alt="scissor"
+              width="50px"
+              height="50px"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
